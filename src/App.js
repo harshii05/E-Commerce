@@ -80,10 +80,10 @@ const App = () => {
           <Route exact path="/E-Commerce"
             element={<Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />}
           />
-          <Route exact path="/cart"
+          <Route exact path="/E-Commerce/cart"
            element={ <Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />}
           />
-          <Route path="/checkout" exact
+          <Route path="/E-Commerce/checkout" exact
             element={<Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />}
           />
         </Routes>
