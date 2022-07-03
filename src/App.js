@@ -77,7 +77,7 @@ const App = () => {
         <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
         <Routes>
-          <Route exact path="/"
+          <Route exact path="/E-Commerce"
             element={<Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />}
           />
           <Route exact path="/cart"
