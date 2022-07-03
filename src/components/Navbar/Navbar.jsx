@@ -20,7 +20,7 @@ const PrimarySearchAppBar = ({ totalItems }) => {
   const renderMobileMenu = (
     <Menu anchorEl={mobileMoreAnchorEl} anchorOrigin={{ vertical: 'top', horizontal: 'right' }} id={mobileMenuId} keepMounted transformOrigin={{ vertical: 'top', horizontal: 'right' }} open={isMobileMenuOpen} onClose={handleMobileMenuClose}>
       <MenuItem>
-        <IconButton component={Link} to="/cart" aria-label="Show cart items" color="inherit">
+        <IconButton component={Link} to="/E-Commerce/cart" aria-label="Show cart items" color="inherit">
           <Badge badgeContent={totalItems} color="secondary">
             <ShoppingCart />
           </Badge>
